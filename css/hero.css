@@ -363,7 +363,7 @@ button{
     grid-column-start: 2;
 }
 #proyect{
-    padding-top: calc(350px/2);
+    padding-top: calc(40vh/2);
 }
 .proyect__container{
     max-width: 1200px;
