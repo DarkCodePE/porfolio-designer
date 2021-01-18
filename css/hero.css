@@ -153,6 +153,7 @@ button{
     font-size: 1.5em;
     position: relative;
     cursor: pointer;
+    margin: 0 10px;
 }
 .hero__menu ul li:hover:after{
     background-color: #CBA81A;
