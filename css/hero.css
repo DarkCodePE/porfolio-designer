@@ -115,9 +115,6 @@ button{
     color: #c4a31c;
 }
 /* || Hero section */
-#hero{
-    /* background-color: #2F3340; */
-}
 #hero::after {
     background-color: #CBA81A;
     content: "";
@@ -136,7 +133,7 @@ button{
     display: grid;
     grid-template-areas: "menu menu menu"
                        "title  avatar descripcion";
-    grid-template-rows: 180px 1fr;
+    grid-template-rows: 160px 1fr;
     grid-template-columns: 1fr 2fr 500px;
     gap: 2em;
     margin: 0 auto;
