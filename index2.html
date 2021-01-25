@@ -72,7 +72,7 @@
             <!-- skills -->
             <div class="about__info_skills">
                 <div class="about__info_skills_container">
-                    <div class="about__info_skills_item">
+                    <div class="about__info_skills_item" onclick="changeSectionByCategory('product')">
                         <figure>
                             <img src="./resources/image/diseño-industrial/diseño_industrial_icon.png" alt="">
                         </figure>
@@ -81,7 +81,7 @@
                             <span>6 Projects</span>
                         </div>
                     </div>
-                    <div class="about__info_skills_item">
+                    <div class="about__info_skills_item" onclick="changeSectionByCategory('web')">
                         <figure>
                             <img src="./resources/image/uxui/ux-icon-cv.png" alt="">
                         </figure>
@@ -108,7 +108,7 @@
     <div id="proyect">
         <div class="proyect__container">
             <h6>Experience in projetcs with: </h6>
-            <div class="proyect__item_container">
+            <div id="product" class="proyect__item_container show_section">
                 <div class="proyect__item item_gap">
                     <div class="proyect__item_info">
                         <h6>Integra Furniture</h6>
@@ -150,7 +150,7 @@
                             <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
-                    <div class="proyect__item_image">
+                    <div class="proyect__item_image proyect__item_reverse_columm">
                         <div class="proyect__item_image_palanca">
                             <img src="./resources/image/diseño-industrial/art1-cv.png" alt="proyect-image-chumpi">
                             <img src="./resources/image/diseño-industrial/art2-cv.png" alt="proyect-image-chumpi">
@@ -159,7 +159,7 @@
                         <img id="chumpi-img2" src="./resources/image/diseño-industrial/Chumpi.png" alt="proyect-image-chumpi">
                     </div>
                 </div>
-                <div class="proyect__item">
+                <div class="proyect__item item_gap">
                     <div class="proyect__item_info">
                         <h6>Unu Allapa -</h6>
                         <p>
@@ -182,7 +182,85 @@
                         </div>
                     </div>
                     <div class="proyect__item_image">
-                        <img id="furniture" src="./resources/image/diseño-industrial/tesis-cv.png" alt="proyect-image-furniture">
+                        <img id="tesis" src="./resources/image/diseño-industrial/tesis-cv.png" alt="proyect-image-furniture">
+                    </div>
+                </div>
+            </div>
+            <div id="web" class="proyect__item_container hide_section">
+                <div class="proyect__item item_gap">
+                    <div class="proyect__item_info">
+                        <h6>Landing Pages -</h6>
+                        <p>
+                            "Diseño de landing pages y prototipos de ellos
+                            de presentación de productos, lanzamiento de
+                            marcas o nuevos proyectos, dando a conocer
+                            el propósito o conseguir inversión para un call
+                            to action rápido".
+                        </p>
+                        <div class="proyect__item_info_button">
+                            <button>
+                                Explore More  
+                            </button>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="proyect__item_image">
+                        <img id="furniture" src="./resources/image/diseño-industrial/Integra-furniture-png-cv.png" alt="proyect-image-furniture">
+                    </div>
+                </div>
+                <div class="proyect__item">
+                    <div class="proyect__item_info">
+                        <h6>Análisis Ux/Ui -</h6>
+                        <p>
+                            "Prototipos digitales alta y baja fidelidad,
+                            realizados en Adobe xd, Figma e Invision,
+                            generando un análisis previo a la solución
+                            aplicando metodologías enfocados en el
+                            usuario como design thinking, lean ux, entre
+                            otras, de la mano con metodologías
+                            organizacionales como Scrum y OKRs (Objetive
+                            keys Results)".
+                        </p>
+                        <div class="proyect__item_info_button">
+                            <button>
+                                Explore More  
+                            </button>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="proyect__item_image proyect__item_reverse_columm">
+                        <div class="proyect__item_image_palanca">
+                            <img src="./resources/image/diseño-industrial/art1-cv.png" alt="proyect-image-chumpi">
+                            <img src="./resources/image/diseño-industrial/art2-cv.png" alt="proyect-image-chumpi">
+                        </div>
+                        
+                        <img id="chumpi-img2" src="./resources/image/diseño-industrial/Chumpi.png" alt="proyect-image-chumpi">
+                    </div>
+                </div>
+                <div class="proyect__item item_gap">
+                    <div class="proyect__item_info">
+                        <h6>Prototipos en Html/ Css -</h6>
+                        <p>
+                            Producto modular que permite adaptar
+                            recipientes tipo balde de 56 litros y tinas, para el
+                            uso y rehúso del agua en las actividades del
+                            hogar, en el que por medio de movimientos
+                            verticales a través de un mecanismo de acción
+                            manual, facilite y agilice el trabajo de las amas
+                            de casa y mantenga en el módulo de lavar
+                            alimentos y trastes un caño ecológico y
+                            combinar fácilmente el agua con elementos de
+                            limpieza (bicarbonato, vinagre, cloro y lejía)
+                        </p>
+                        <div class="proyect__item_info_button">
+                            <button>
+                                Explore More  
+                            </button>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="proyect__item_image">
+                        <img id="tesis" src="./resources/image/diseño-industrial/tesis-cv.png" alt="proyect-image-furniture">
                     </div>
                 </div>
             </div>
@@ -313,12 +391,29 @@
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 <script>
 	document.addEventListener( 'DOMContentLoaded', function () {
+        //Slider
 		new Splide( '.splide', {
             type     : 'loop',
             autoWidth: true,
             focus    : 'center',
             height: '50vh'
         } ).mount();
-	} );
+        /* changeSectionByCategory(); */
+    });
+    function changeSectionByCategory(idSection) {
+        // secion que voy mostrar
+        let section = document.getElementById(idSection);
+        //ocultar la demas secciones
+        const contenedor = document.getElementsByClassName("proyect__item_container");
+        for (let index = 0; index < contenedor.length; index++) {
+            if (section.isEqualNode(contenedor[index])) {
+                section.classList.remove("hide_section");
+                section.classList.add("show_section");
+            }else{
+                contenedor[index].classList.remove("show_section");
+                contenedor[index].classList.add("hide_section");
+            }
+        }
+    }
 </script>
 </html>

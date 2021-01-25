@@ -286,6 +286,7 @@ button{
     align-items: center;
     gap: 2em;
     position: absolute;
+    top: 50px;
 }
 .about__info_skills_item{
     display: flex;
@@ -294,7 +295,7 @@ button{
     justify-content: center;
     padding: 0 1em;
     background: #424758;
-    height: 40vh;
+    height: 30vh;
 }
 .about__info_skills_item:hover{
     background: #F29422;
@@ -364,10 +365,10 @@ button{
     grid-column-start: 2;
 }
 #proyect{
-    padding-top: 40vh;
+    padding-top: 20vh;
 }
 .proyect__container{
-    max-width: 1200px;
+    max-width: 1050px;
     height: auto;
     margin: 0 auto;
     display: grid;
@@ -378,15 +379,23 @@ button{
 .proyect__item_container{
     display: grid;
     gap: 4em 2em;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
 }
 .proyect__item{
     display: grid;
-    grid-template-columns: 1.5fr 300px;
+    grid-template-columns: 1fr 1fr;
     gap: 1em;
+    align-items: center;
+    grid-auto-flow: dense;
 }
 .item_gap{
     gap: 3em;
+}
+.proyect__item_info{
+    display: grid;
+    gap: 1.5em;
 }
 .proyect__item_info p{
     font-size: 16px;
@@ -403,14 +412,20 @@ button{
     display: flex;
     align-items:center;
     justify-content: center;
-    height: 420px;
+    height: 450px;
     background-color: #252835;
     position: relative;
+    width: 300px;
+    justify-self: end;
+} 
+.proyect__item_reverse_columm{
+    order: -1;
+    justify-self: start;
 }
 
 .proyect__item_image #furniture{
     right: 10px;
-    width: 350px;
+    width: 450px;
     position: absolute; 
 }
 .proyect__item_image #chumpi-img2{
@@ -418,6 +433,12 @@ button{
     width: 300px;
     bottom: 30px;
     position: absolute; 
+}
+
+.proyect__item_image #tesis{
+    width: 350px;
+    position: absolute; 
+    right: 20px;
 }
 .proyect__item_image_palanca{
     display: grid;
@@ -517,4 +538,11 @@ button{
     color: #dcdcde;
     font-size: 2em;
     margin: 0 10px;
+}
+/************ Utilitarios *********/
+.hide_section{
+    display: none;
+}
+.show_section{
+    display: grid;
 }
