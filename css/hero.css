@@ -142,7 +142,7 @@ button{
     margin: 0 auto;
     background-image: url("../resources/image/fondos/fondo_avatar.png");
     background-repeat: no-repeat;
-    background-position: 134px 160px;
+    background-position: 208px 190px;
 }
 .hero__menu{
     grid-area: menu;
