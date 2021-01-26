@@ -137,13 +137,12 @@ button{
         "menu menu menu"
         "title avatar descripcion";
     grid-template-rows: 10vh 1fr;
-    grid-template-columns: 1fr 2fr 500px;
+    grid-template-columns: 1fr 2fr 1.5fr;
     gap: 1em;
     margin: 0 auto;
-    background-image: url("../resources/image/fondos/fondo.png");
+    background-image: url("../resources/image/fondos/fondo_avatar.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+    background-position: 134px 160px;
 }
 .hero__menu{
     grid-area: menu;
@@ -241,7 +240,7 @@ button{
 .hero__descripcion_btn_down span i{
     font-size: 1.2em;
 }
-
+/* || About section */
 #about{
     background-color: #242734;
 }
@@ -346,6 +345,7 @@ button{
     font-size: 1em;
     width: 50%;
 }
+/* || About section */
 #experience{
     padding-top: 60px;
 }
@@ -376,6 +376,7 @@ button{
 .experience__items_logos:nth-child(4){
     grid-column-start: 2;
 }
+/* || Proyect section */
 #proyect{
     padding-top: 20vh;
 }
@@ -513,7 +514,7 @@ button{
     height: 100%;
 }
 
-/* achievements */
+/* || Achievements section */
 #achievements{
     background-color: #252835;
 }
@@ -544,8 +545,8 @@ button{
 .splide__slide_imagen img{
     width: 100%;
 }
+/* || Contact section */
 
-/* contact */
 .contact__container{
     max-width: 1200px;
     height: 80vh;
