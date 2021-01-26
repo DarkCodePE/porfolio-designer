@@ -72,7 +72,8 @@ body {
     font-weight: 500;
     overflow-x: hidden !important;
     text-align: left;
-    color: #dcdcde;
+   /*  color: #dcdcde; */
+    color: #cbcbce;
     opacity: 0.9;
     background-color: #2F3340;
 } 
@@ -96,6 +97,7 @@ p, span{
     color: #6A6B6A;
     font-size: 22px;
     font-weight: 600;
+    letter-spacing: 1px;
 }
 figure{
     margin: 0;
@@ -138,6 +140,10 @@ button{
     grid-template-columns: 1fr 2fr 500px;
     gap: 1em;
     margin: 0 auto;
+    background-image: url("../resources/image/fondos/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 .hero__menu{
     grid-area: menu;
@@ -213,6 +219,12 @@ button{
 .hero__descripcion_body{
     display: grid;
     gap: 1.5em;
+}
+.hero__descripcion_body h6{
+    color: #d5b019;
+}
+.hero__descripcion_body p{
+    color: #cbcbce;
 }
 .hero__descripcion_btn_down{
     position: absolute;
@@ -438,8 +450,44 @@ button{
 .proyect__item_image #tesis{
     width: 350px;
     position: absolute; 
+    right: 10px;
+}
+
+.proyect__item_image #web_designer{
+    right: 10px;
+    border-radius: 20px;
+    width: 100%;
+    transform: rotate(340deg);
+}
+
+.proyect__item_image #web_designer2{
+    right: 10px;
+    border-radius: 20px;
+    width: 100%;
+    transform: rotate(340deg);
+}
+
+.proyect__item_image #ux_ui{
+    width: 350px;
+    position: absolute; 
     right: 20px;
 }
+
+.proyect__item_image #web_designer3{
+    position: absolute;
+    right: 20px;
+    border-radius: 20px;
+    width: 100%;
+    transform: rotate(340deg);
+}
+
+.proyect__item_image #bycool{
+    position: absolute;
+    right: 20px;
+    border-radius: 20px;
+    width: 400px;
+}
+
 .proyect__item_image_palanca{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -449,6 +497,18 @@ button{
     top: -50px;
 }
 .proyect__item_image_palanca img{
+    width: 150px;
+    height: 100%;
+}
+.proyect__item_image_web_container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 300px;
+    height: inherit;
+    position: absolute; 
+    gap: 2em;
+}
+.proyect__item_image_web_container img{
     width: 150px;
     height: 100%;
 }
